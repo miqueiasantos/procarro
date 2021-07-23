@@ -1,0 +1,16 @@
+{
+    "name": "jasantos",
+    "version": "1.0.0",
+    "description": "",
+    "main": "/",
+    "scripts": {
+        "build:sass": "sass scss/estilos.scss css/estilos.css",
+        "prefix": "npm run build:sass && postcss css/estilos.css --use=autoprefixer --output=css/estilos.css",
+        "start": "onchange \"scss/*.scss\" -- npm run prefix"
+    },
+    "browserslist": [
+        "last 3 versions"
+    ],
+    "author": "",
+    "license": "ISC"
+}
